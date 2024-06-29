@@ -17,7 +17,6 @@ function calculateDoubleAge() {
     } else {
         result = "El padre actualmente tiene el doble de la edad del hijo.";
     }
-
     document.getElementById('result').innerText = result;
-}
 
+}
