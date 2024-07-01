@@ -4,22 +4,38 @@ import { calculateDoubleAge } from '../twice as old/app';
 
 describe('calculateDoubleAge', () => {
     it('should return 22 when father is 36 and child is 7', () => {
-        expect(calculateDoubleAge(36, 7)).toBe(22);
+        const padre = 36;
+        const hijo = 7;
+        const resultado = calculateDoubleAge(padre, hijo);
+        expect(resultado).toBe(22);
     });
 
     it('should return 5 when father is 55 and child is 30', () => {
-        expect(calculateDoubleAge(55, 30)).toBe(5);
+        const padre = 55;
+        const hijo = 30;
+        const resultado = calculateDoubleAge(padre, hijo);
+        expect(resultado).toBe(5);
     });
-
     it('should return 0 when father is 42 and child is 21', () => {
-        expect(calculateDoubleAge(42, 21)).toBe(0);
+        const padre = 42;
+        const hijo = 21;
+        const resultado = calculateDoubleAge(padre, hijo);
+        expect(resultado).toBe(0);
     });
-
     it('should return 20 when father is 22 and child is 1', () => {
-        expect(calculateDoubleAge(22, 1)).toBe(20);
+        const padre = 22;
+        const hijo = 1;
+        const resultado = calculateDoubleAge(padre, hijo);
+        expect(resultado).toBe(20);
+    });
+    it('should return 29 when father is 29 and child is 0', () => {
+        const padre = 29;
+        const hijo = 0;
+        const resultado = calculateDoubleAge(padre, hijo);
+        expect(resultado).toBe(29);
     });
 
-    it('should return 29 when father is 29 and child is 0', () => {
-        expect(calculateDoubleAge(29, 0)).toBe(29)
-    });
+
+
+
 });
