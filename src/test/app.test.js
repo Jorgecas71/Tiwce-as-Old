@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { calculateDoubleAge } from '../twice as old/app.js';
+import { calculateDoubleAge } from '../twice as old/app';
 
 
 describe('calculateDoubleAge', () => {

@@ -8,14 +8,15 @@ function calculateDoubleAge() {
     }
 
     const yearsUntilDouble = fatherAge - 2 * childAge;
-    let result = "";
+    let result = "yearsUntilDouble";
 
     if (yearsUntilDouble > 0) {
         result = `En ${yearsUntilDouble} años, el padre tendrá el doble de la edad del hijo.`;
     } else if (yearsUntilDouble < 0) {
         result = `Hace ${Math.abs(yearsUntilDouble)} años, el padre tenía el doble de la edad del hijo.`;
     } else {
-        result = "El padre actualmente tiene el doble de la edad del hijo.";
+        //result = "El padre actualmente tiene el doble de la edad del hijo.";
+        result = yearsUntilDouble
     }
     document.getElementById('result').innerText = result;
 
